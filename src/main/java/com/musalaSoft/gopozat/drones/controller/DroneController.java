@@ -87,7 +87,7 @@ public class DroneController {
         return droneServices.CheckAllDrones();
     }
     
-    //every 1 minute
+    //every 5 seconds
     @Scheduled(cron = "*/5 * * * * *")
     public void batteryLevelAudit(){
     List<Drone> drones=droneServices.CheckAllDrones();
